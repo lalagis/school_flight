@@ -2,6 +2,7 @@ import react from '@astrojs/react'
 import { defineConfig } from 'astro/config'
 import million from 'million/compiler'
 import UnoCSS from 'unocss/astro'
+import cesium from 'vite-plugin-cesium'
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,6 +16,7 @@ export default defineConfig({
         server: true,
         auto: true,
       }),
+      cesium(),
     ],
 
     test: {
